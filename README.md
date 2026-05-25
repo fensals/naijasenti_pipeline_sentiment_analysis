@@ -1,4 +1,8 @@
-#### NaijaSenti PCM Sentiment Analysis Pipeline
+## NaijaSenti PCM Sentiment Analysis Pipeline
+
+### By: Femi Aleyemi — PGD Information Technology Project
+### Supervised by: Dr Faki Silas.
+
 An end-to-end automated sentiment analysis pipeline for Nigerian Pidgin (PCM) social media text, built as the practical implementation component of my PGD Information Technology project.
 All data is sourced exclusively from the NaijaSenti GitHub repository — no API keys or paid services required.
 
@@ -7,7 +11,7 @@ This pipeline classifies Nigerian Pidgin tweets into positive, negative, or neut
 ModelTypeAccuracyVADERLexicon-based baseline~52%Logistic Regression + TF-IDFTraditional ML (trained on NaijaSenti PCM)~73%AfriBERTa (fine-tuned)Transformer — African-language pre-trained~86%
 
 
-####Data Source
+#### Data Source
 All data comes from the official NaijaSenti repository:
 https://github.com/hausanlp/NaijaSenti/tree/main/data
 The download_naijasenti_pcm.py script fetches the following PCM-specific files automatically:
@@ -71,5 +75,3 @@ If you use this work, please also cite the NaijaSenti dataset:
 }
 
 
-By: Femi Aleyemi — PGD Information Technology Project
-#### Supervised by Dr Faki Silas.
