@@ -54,7 +54,7 @@ python evaluate_all_models.py
 #### Step 6 — Hypothesis test
 python hypothesis_test.py
 
-Requirements
+#### Requirements
 
 Python 3.11
 Apache Spark 3.5 / PySpark
@@ -65,13 +65,9 @@ scikit-learn, pandas, matplotlib, seaborn, scipy
 Install everything via setup_environment.sh or:
 bashpip install -r requirements.txt
 
-Citation
+#### Citation
 If you use this work, please also cite the NaijaSenti dataset:
-@inproceedings{muhammad-etal-2022-naijasenti,
-  title     = {NaijaSenti: A Nigerian Twitter Sentiment Corpus for Multilingual Sentiment Analysis},
-  author    = {Muhammad, Shamsuddeen Hassan and Adelani, David Ifeoluwa and Ruder, Sebastian and others},
-  booktitle = {Proceedings of the 13th Language Resources and Evaluation Conference (LREC)},
-  year      = {2022}
-}
+
+Muhammad, S. H., Adelani, D. I., Ruder, S., Ahmad, I. S., Abdulmumin, I., Bello, B. S., Choudhury, M., Emezue, C. C., Abdullahi, S. S., Aremu, A., Jorge, A., & Brazdil, P. (2022). NaijaSenti: A Nigerian Twitter sentiment corpus for multilingual sentiment analysis. Proceedings of the Thirteenth Language Resources and Evaluation Conference, 590-602.
 
 
