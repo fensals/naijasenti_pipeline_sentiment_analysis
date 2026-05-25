@@ -1,15 +1,13 @@
-NaijaSenti PCM Sentiment Analysis Pipeline
-An end-to-end automated sentiment analysis pipeline for Nigerian Pidgin (PCM) social media text, built as the practical implementation component of a PGD Information Technology project.
+#### NaijaSenti PCM Sentiment Analysis Pipeline
+An end-to-end automated sentiment analysis pipeline for Nigerian Pidgin (PCM) social media text, built as the practical implementation component of my PGD Information Technology project.
 All data is sourced exclusively from the NaijaSenti GitHub repository — no API keys or paid services required.
 
-Project Overview
+#### Project Overview
 This pipeline classifies Nigerian Pidgin tweets into positive, negative, or neutral sentiment using three models of increasing sophistication:
 ModelTypeAccuracyVADERLexicon-based baseline~52%Logistic Regression + TF-IDFTraditional ML (trained on NaijaSenti PCM)~73%AfriBERTa (fine-tuned)Transformer — African-language pre-trained~86%
 
-Repository Contents
-FilePurposesetup_environment.shCreates the Conda environment and installs all dependenciesdownload_naijasenti_pcm.pyDownloads PCM data files from the NaijaSenti GitHub repoexplore_pcm_dataset.pyEDA — class distributions, tweet-length stats, data quality auditpreprocess_pcm.pyPySpark distributed cleaning — Pidgin normalisation, stopword removalclassify_vader.pyVADER lexicon baseline classificationclassify_tfidf_lr.pyTF-IDF + Logistic Regression classifier with PCM lexicon featuresclassify_afriberta.pyAfriBERTa fine-tuning and inferenceevaluate_all_models.pyConsolidated metrics, comparison charts, confusion matriceshypothesis_test.pyChi-Square test of automated vs. human annotation performancerequirements.txtFull list of Python dependenciesCHAPTERS_1-5.docxFull project report (Chapters 1–5)REFERENCES_APPENDIX.docxReferences and appendix
 
-Data Source
+####Data Source
 All data comes from the official NaijaSenti repository:
 https://github.com/hausanlp/NaijaSenti/tree/main/data
 The download_naijasenti_pcm.py script fetches the following PCM-specific files automatically:
@@ -23,7 +21,7 @@ data/lexicons/translated_sentiment_pcm.tsv — translated Afinn sentiment lexico
 data/lexicons/translated_emotion_pcm.tsv — translated emotion lexicon
 
 
-Getting Started
+#### Getting Started
 1. Clone the repository
 bashgit clone https://github.com/fensals/naijasenti_pipeline_sentiment_analysis.git
 cd naijasenti_pipeline_sentiment_analysis
@@ -31,24 +29,25 @@ cd naijasenti_pipeline_sentiment_analysis
 bashbash setup_environment.sh
 conda activate naijasenti_pcm
 3. Run the pipeline in order
-bash# Step 1 — Download data from NaijaSenti GitHub
+
+#### Step 1 — Download data from NaijaSenti GitHub
 python download_naijasenti_pcm.py
 
-# Step 2 — Explore the dataset
+#### Step 2 — Explore the dataset
 python explore_pcm_dataset.py
 
-# Step 3 — Preprocess with PySpark
+#### Step 3 — Preprocess with PySpark
 python preprocess_pcm.py
 
-# Step 4 — Run classifiers
+#### Step 4 — Run classifiers
 python classify_vader.py
 python classify_tfidf_lr.py
 python classify_afriberta.py   # GPU recommended
 
-# Step 5 — Evaluate and compare
+#### Step 5 — Evaluate and compare
 python evaluate_all_models.py
 
-# Step 6 — Hypothesis test
+#### Step 6 — Hypothesis test
 python hypothesis_test.py
 
 Requirements
@@ -71,5 +70,6 @@ If you use this work, please also cite the NaijaSenti dataset:
   year      = {2022}
 }
 
-Author
-Femi Aleyemi — PGD Information Technology Project
+
+By: Femi Aleyemi — PGD Information Technology Project
+#### Supervised by Dr Faki Silas.
