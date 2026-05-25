@@ -1,9 +1,9 @@
 ## NaijaSenti PCM Sentiment Analysis Pipeline
 
-### By: Femi Aleyemi — PGD Information Technology Project
+### By: Femi Aleyemi
 ### Supervised by: Dr Faki Silas.
 
-An end-to-end automated sentiment analysis pipeline for Nigerian Pidgin (PCM) social media text, built as the practical implementation component of my PGD Information Technology project.
+An end-to-end automated sentiment analysis pipeline for Nigerian Pidgin (PCM) social media text, built as the practical implementation component of my ***PGD Information Technology*** project.
 All data is sourced exclusively from the NaijaSenti GitHub repository — no API keys or paid services required.
 
 #### Project Overview
