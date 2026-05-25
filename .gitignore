@@ -1,0 +1,15 @@
+# Ignore local data storage
+   *.tsv
+   *.csv
+   *.json
+   .data/
+   
+   # Ignore Python virtual environments and cache
+   __pycache__/
+   venv/
+   .env
+   .ipynb_checkpoints/
+   
+   # Ignore system files
+   .DS_Store
+   Thumbs.db

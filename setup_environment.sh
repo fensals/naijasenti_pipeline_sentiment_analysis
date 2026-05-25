@@ -1,0 +1,34 @@
+
+set -e   # Exit immediately on any error
+
+ENV_NAME="naijasenti_pcm"
+
+echo "Creating Conda environment: $ENV_NAME"
+conda create -n "$ENV_NAME" python=3.11 -y
+
+# Activate the new environment
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate "$ENV_NAME"
+
+# Installing necessary libraries
+
+pip install pyspark==3.5.0          # Distributed computing engine
+pip install pandas==2.1.4           # DataFrame manipulation
+pip install numpy==1.26.2           # Numerical operations
+pip install pyarrow==14.0.2         # Parquet read/write support
+pip install requests==2.31.0        # HTTP downloads from GitHub raw URLs
+pip install transformers==4.39.3    # HuggingFace Transformers (AfriBERTa)
+pip install torch==2.2.1            # PyTorch backend
+pip install sentencepiece==0.2.0    # Tokeniser dependency for AfriBERTa
+pip install datasets==2.19.0        # HuggingFace Datasets (optional loader)
+pip install vaderSentiment==3.3.2   # VADER lexicon classifier
+pip install scikit-learn==1.4.0     # Logistic Regression, evaluation metrics
+pip install joblib==1.3.2           # Model serialisation
+pip install matplotlib==3.8.2
+pip install seaborn==0.13.2
+pip install scipy==1.12.0           # Chi-Square test
+pip install wordcloud==1.9.3
+pip install jupyter ipykernel
+
+
+pip freeze > requirements.txt # Save the exact versions of installed packages for reproducibility
