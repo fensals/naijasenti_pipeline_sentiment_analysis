@@ -8,7 +8,7 @@ All data is sourced exclusively from the NaijaSenti GitHub repository — no API
 
 #### Project Overview
 This pipeline classifies Nigerian Pidgin tweets into positive, negative, or neutral sentiment using three models of increasing sophistication:
-ModelTypeAccuracyVADERLexicon-based baseline~52%Logistic Regression + TF-IDFTraditional ML (trained on NaijaSenti PCM)~73%AfriBERTa (fine-tuned)Transformer — African-language pre-trained~86%
+ModelTypeAccuracyVADERLexicon-based baseline~52%Logistic Regression + TF-IDFTraditional ML (trained on NaijaSenti PCM) about 73% AfriBERTa (fine-tuned)Transformer — African-language pre-trained about 86%
 
 
 #### Data Source
