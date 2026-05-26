@@ -1,4 +1,4 @@
-## NaijaSenti PCM Sentiment Analysis Pipeline
+## Sentiment Analysis Pipeline
 
 ### By: Femi Aleyemi
 ### Supervised by: Dr Faki Silas.
